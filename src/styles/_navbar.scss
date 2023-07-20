@@ -1,0 +1,26 @@
+nav {
+    border-bottom: 1px solid $gray-color;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.342);
+    backdrop-filter: blur(10px);
+    height: 10vh;
+
+    .logo {
+        height: 100%;
+    }
+
+    li {
+        display: inline-block;
+
+        a {
+            padding: .5rem;
+        }
+    }
+}

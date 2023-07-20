@@ -1,0 +1,112 @@
+[
+    {
+        "name": "Github User Search",
+        "image": "/src/assets/project/ghs.png",
+        "github": "https://github.com/twisty-team/tz_wcc2_s1",
+        "description": "A web app for searching github users by name",
+        "stack": [
+            "Flask",
+            "Python",
+            "REST API",
+            "WCC 2nd edition"
+        ]
+    },
+    {
+        "name": "Fintina",
+        "image": "/project_img/kalyhub-mobile.jpg",
+        "github": "github.com/tbgracy/kalyhub-mobile",
+        "description": "An app that extract keywords from a text",
+        "stack": [
+            "Flutter",
+            "Dart",
+            "NLP"
+        ]
+    },
+    {
+        "name": "Spotato",
+        "image": "/src/assets/project/spotato.png",
+        "github": "github.com/tbgracy/kalyhub-mobile",
+        "description": "A queue app",
+        "stack": [
+            "Flutter",
+            "Dart"
+        ]
+    },
+    {
+        "name": "Onirix",
+        "image": "/project_img/otrin.jpg",
+        "github": "github.com/tbgracy/kalyhub-mobile",
+        "description": "A queue app",
+        "stack": [
+            "Flutter",
+            "Dart"
+        ]
+    },
+    {
+        "name": "CashCam",
+        "image": "/project_img/otrin.jpg",
+        "github": "github.com/tbgracy/kalyhub-mobile",
+        "description": "A mobile app for facilitating ussd operations using CV",
+        "stack": [
+            "Flutter",
+            "Dart",
+            "Computer Vision"
+        ]
+    },
+    {
+        "name": "Renaminator",
+        "image": "/project_img/otrin.jpg",
+        "github": "github.com/tbgracy/kalyhub-mobile",
+        "description": "A small python script for renaming files in bulk",
+        "stack": [
+            "Python",
+            "PyPI",
+            "CLI"
+        ]
+    },
+    {
+        "name": "Kalyhub",
+        "image": "/src/assets/project/kalyhub.png",
+        "github": "#",
+        "description": "A restaurant meal ordering platform",
+        "stack": [
+            "Flutter",
+            "Dart",
+            "DRF",
+            "Django",
+            "MVola API"
+        ]
+    },
+    {
+        "name": "Ankamantatra",
+        "image": "/src/assets/project/ankamantatra.png",
+        "github": "https://github.com/twisty-team/ankamantatra",
+        "description": "A CLI app used for trivial quizzes",
+        "stack": [
+            "Python",
+            "CLI",
+            "WCC 2nd edition"
+        ]
+    },
+    {
+        "name": "Timetable Generator",
+        "image": "/src/assets/project/timetable.png",
+        "github": "https://github.com/tbgracy/timetable",
+        "description": "A CLI for generating random timetable based on some constraints",
+        "stack": [
+            "Python",
+            "CLI",
+            "WCC 3nd edition"
+        ]
+    },    {
+        "name": "Otrin",
+        "image": "/project_img/otrin.jpg",
+        "github": "https://github.com/tbgracy/timetable",
+        "description": "A CLI for generating random timetable based on some constraints",
+        "stack": [
+            "Python",
+            "CLI",
+            "WCC 3nd edition"
+        ]
+    }
+]

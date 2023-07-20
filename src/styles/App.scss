@@ -1,0 +1,74 @@
+@import "variables";
+
+@font-face {
+  font-family: "Neus";
+  src: url("../assets/fonts/NeusaNextStdTrial-WideRegular-BF63ec3d6e7e6cd.otf");
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("../assets/fonts/Nunito-VariableFont_wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Neus", "Sans Serif";
+  font-weight: bold;
+}
+
+::selection {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+}
+
+body {
+  font-family: 'Nunito', 'Sans Serif';
+  background-image:
+    url("../assets/bg/1.png"),
+    url("../assets/bg/2.png"),
+    // url("../assets/bg/3.png"),
+    // url("../assets/bg/4.png"),
+    url("../assets/bg/5.png");
+  background-repeat: no-repeat;
+  background-position:
+    0% 0%,
+    50% 50%,
+    // 100% 20%,
+    // 70% 40%,
+    0% 100%;
+  background-size: auto;
+
+  &::-webkit-scrollbar {
+    width: .5rem;
+    height: .5rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $gray-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $accent-color;
+    border-radius: 10px;
+  }
+
+}
+
+
+@import "navbar";
+@import "section";
+@import "externalLinks";
+@import "links";

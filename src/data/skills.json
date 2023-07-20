@@ -1,0 +1,48 @@
+[
+    {
+        "category": "Programming Languages & Frameworks",
+        "items": [
+            "Python",
+            "Flask",
+            "Django",
+            "Dart",
+            "Flutter",
+            "Java",
+            "JavaEE",
+            "HTML/CSS/JS",
+            "REST API",
+            "GraphQL API"
+        ]
+    },
+    {
+        "category": "Databases",
+        "items": [
+            "MySQL",
+            "Firestore",
+            "PostgreSQL",
+            "SQLite"
+        ]
+    },
+    {
+        "category": "Devops",
+        "items": [
+            "Docker",
+            "Kubernetes",
+            "CI/CD with AWS"
+        ]
+    },
+    {
+        "category": "Tools",
+        "items": [
+            "VSCode",
+            "Linux",
+            "Figma",
+            "Git",
+            "Github",
+            "Postman",
+            "IntelliJ",
+            "Eclipse",
+            "Chrome DevTools"
+        ]
+    }
+]

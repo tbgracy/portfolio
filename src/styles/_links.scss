@@ -1,0 +1,13 @@
+a {
+    color: $dark-color;
+    font-weight: bold;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: $transition-duration;
+
+    &:hover {
+        color: $accent-color;
+        transition-property: all;
+        transition-duration: $transition-duration;
+    }
+}
