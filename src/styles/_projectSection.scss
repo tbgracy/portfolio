@@ -1,3 +1,7 @@
+@mixin transition_ {
+    transition: all $transition-duration ease-in-out;
+}
+
 section#projects {
     #project-container {
         display: flex;
@@ -16,6 +20,7 @@ section#projects {
             position: relative;
             border-radius: $border-radius;
             margin: 1rem;
+            transition: all $transition-duration;
 
             // project-title
             h3 {
@@ -50,19 +55,23 @@ section#projects {
             }
 
             // project links
-            ul:last-of-type {
+            ul.links {
+                transform: scale(0);
+                position: absolute;
                 list-style: none;
                 text-align: right;
                 display: block;
                 font-size: larger;
+            }
 
-                li a {
-                    padding: 10px;
-                }
+            &:hover ul.links {
+                transform: scale(1);
+                position: relative;
+                @include transition_();
             }
 
             // stack-list
-            ul:first-of-type {
+            ul.stack {
                 width: 100%;
                 text-align: center;
                 box-sizing: border-box;
@@ -80,7 +89,7 @@ section#projects {
 
             &:hover img {
                 transform: scale(1.2);
-                transition: all $transition-duration;
+                @include transition_();
             }
 
             .project-img-container {

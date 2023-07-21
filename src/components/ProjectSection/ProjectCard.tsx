@@ -19,7 +19,7 @@ export default function ProjectCard({ project }: { project: Project }) {
             <p>{project.description}</p>
             <div className="footer">
                 <StackSet data={project.stack} />
-                <ul className="project__links">
+                <ul className="links">
                     <li title="Voir détails"><a href="#"><FaArrowRight /></a></li>
                     <li title="Lien github"><a href={project.github}><FaGithub /></a></li>
                 </ul>

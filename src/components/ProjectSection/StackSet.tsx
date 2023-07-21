@@ -4,7 +4,7 @@ export default function StackSet({ data }: { data: Array<string> }) {
     });
 
     return (
-        <ul className="project__stack-list">
+        <ul className="stack">
             {stackItems}
         </ul>
     );

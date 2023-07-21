@@ -4,10 +4,6 @@ section {
     padding: 1rem;
     box-sizing: border-box;
 
-    &:not(:first-of-type) {
-        min-height: 100vh;
-    }
-
     h1,
     h2 {
         color: $accent-color;
