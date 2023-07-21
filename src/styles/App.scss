@@ -34,8 +34,8 @@ p {
 }
 
 ::selection {
-  background-color: var(--accent-color);
-  color: var(--light-color);
+  background-color: $accent-color;
+  color: $light-color;
 }
 
 body {
@@ -71,9 +71,13 @@ body {
 
 }
 
+@mixin transition_ {
+  transition: all $transition-duration ease-in-out;
+}
 
 @import "navbar";
 @import "section";
 @import "externalLinks";
 @import "links";
 @import "footer";
+@import "button";

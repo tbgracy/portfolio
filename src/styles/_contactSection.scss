@@ -1,0 +1,40 @@
+#contact form {
+    display: grid;
+    grid-template-areas:
+        "name         email"
+        "message      message"
+        ".  sendmessage"
+    ;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+
+    #name {
+        grid-area: name;
+    }
+
+    #email {
+        grid-area: email;
+    }
+
+    #message {
+        grid-area: message;
+    }
+
+    button {
+        grid-area: sendmessage;
+    }
+
+    input,
+    textarea {
+        padding: 1em;
+        box-sizing: border-box;
+        border-radius: $border-radius;
+        border: 2px solid $gray-color;
+        font-family: 'Nunito';
+        
+        &::placeholder {
+            font-weight: bold;
+        }
+    }
+}

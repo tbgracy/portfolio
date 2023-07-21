@@ -1,0 +1,18 @@
+button {
+    background-color: $accent-color;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bolder;
+    color: $light-color;
+    border-radius: $border-radius * 2;
+    border: 1.5px solid teal;
+    font-family: 'Nunito';
+    @include transition_();
+
+    &:hover {
+        background-color: teal;
+        border-color: $accent-color;
+        @include transition_();
+    }
+}

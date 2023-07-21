@@ -24,6 +24,7 @@
                 display: inline-block;
                 transition-property: all;
                 transition-duration: $transition-duration;
+                cursor: default;
 
                 &:hover {
                     background-color: $accent-color;
