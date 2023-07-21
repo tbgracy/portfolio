@@ -1,7 +1,7 @@
 [
     {
         "name": "Github User Search",
-        "image": "/src/assets/project/ghs.png",
+        "image": "/project_img/ghs.png",
         "github": "https://github.com/twisty-team/tz_wcc2_s1",
         "description": "A web app for searching github users by name",
         "stack": [
@@ -24,7 +24,7 @@
     },
     {
         "name": "Spotato",
-        "image": "/src/assets/project/spotato.png",
+        "image": "/project_img/spotato.png",
         "github": "github.com/tbgracy/kalyhub-mobile",
         "description": "A queue app",
         "stack": [
@@ -66,7 +66,7 @@
     },
     {
         "name": "Kalyhub",
-        "image": "/src/assets/project/kalyhub.png",
+        "image": "/project_img/kalyhub.png",
         "github": "#",
         "description": "A restaurant meal ordering platform",
         "stack": [
@@ -79,7 +79,7 @@
     },
     {
         "name": "Ankamantatra",
-        "image": "/src/assets/project/ankamantatra.png",
+        "image": "/project_img/ankamantatra.png",
         "github": "https://github.com/twisty-team/ankamantatra",
         "description": "A CLI app used for trivial quizzes",
         "stack": [
@@ -90,7 +90,7 @@
     },
     {
         "name": "Timetable Generator",
-        "image": "/src/assets/project/timetable.png",
+        "image": "/project_img/timetable.png",
         "github": "https://github.com/tbgracy/timetable",
         "description": "A CLI for generating random timetable based on some constraints",
         "stack": [
