@@ -29,6 +29,10 @@ h5 {
   font-weight: bold;
 }
 
+p {
+  color: $dark-color;
+}
+
 ::selection {
   background-color: var(--accent-color);
   color: var(--light-color);
@@ -72,3 +76,4 @@ body {
 @import "section";
 @import "externalLinks";
 @import "links";
+@import "footer";
