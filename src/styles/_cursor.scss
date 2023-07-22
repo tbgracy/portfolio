@@ -1,0 +1,15 @@
+$pointer-diameter: 40px;
+
+.custom-pointer {
+    z-index: -10;
+    width: $pointer-diameter;
+    height: $pointer-diameter;
+    background-color: $accent-color;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}

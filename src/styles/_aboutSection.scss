@@ -5,6 +5,8 @@ section#about {
 
         p {
             flex-grow: 2;
+            border-left: 2px dashed $accent-color;
+            padding-left: 1rem;
         }
 
         img {
