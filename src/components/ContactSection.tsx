@@ -12,11 +12,11 @@ export default function ContactSection() {
             profiles linked here.
         </p>
         <ExternalLink />
-        <form action="#" method="POST">
+        {/* <form action="#" method="POST">
             <input type="text" name="name" id="name" placeholder="Your name" />
             <input type="email" name="email" id="email" placeholder="Your e-mail address" />
             <textarea name="message" id="message" placeholder="Your message"></textarea>
             <Button type="submit" label="Send"/>
-        </form>
+        </form> */}
     </section>;
 }

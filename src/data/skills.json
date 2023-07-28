@@ -26,9 +26,9 @@
     {
         "category": "Devops",
         "items": [
-            "Docker",
-            "Kubernetes",
-            "CI/CD with AWS"
+            "Docker (notion)",
+            "Kubernetes (notion)",
+            "Heroku/Render/Netlify/..."
         ]
     },
     {
