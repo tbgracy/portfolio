@@ -2,7 +2,6 @@ import SectionTitle from "./SectionTitle";
 
 import contactIcon from "../assets/customIcons/contact.png";
 import ExternalLink from "./ExternalLinks";
-import Button from "./Button";
 
 export default function ContactSection() {
     return <section id="contact">
