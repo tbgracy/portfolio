@@ -14,7 +14,7 @@
     {
         "name": "Fintina",
         "image": "/project_img/kalyhub-mobile.jpg",
-        "github": "github.com/tbgracy/kalyhub-mobile",
+        "github": "https://github.com/spudster-team/fintina-mobile",
         "description": "An app that extract keywords from a text",
         "stack": [
             "Flutter",
@@ -25,7 +25,7 @@
     {
         "name": "Spotato",
         "image": "/project_img/spotato.png",
-        "github": "github.com/tbgracy/kalyhub-mobile",
+        "github": "https://github.com/spudster-team/spotato-mobile",
         "description": "A queue app",
         "stack": [
             "Flutter",
@@ -35,8 +35,8 @@
     {
         "name": "Onirix",
         "image": "/project_img/otrin.jpg",
-        "github": "github.com/tbgracy/kalyhub-mobile",
-        "description": "A queue app",
+        "github": "https://github.com/spudster-team/onirix",
+        "description": "Webcup 2023 project",
         "stack": [
             "Flutter",
             "Dart"
@@ -45,7 +45,7 @@
     {
         "name": "CashCam",
         "image": "/project_img/otrin.jpg",
-        "github": "github.com/tbgracy/kalyhub-mobile",
+        "github": "ghttps://github.com/tbgracy/cashcam",
         "description": "A mobile app for facilitating ussd operations using CV",
         "stack": [
             "Flutter",
@@ -56,7 +56,7 @@
     {
         "name": "Renaminator",
         "image": "/project_img/otrin.jpg",
-        "github": "github.com/tbgracy/kalyhub-mobile",
+        "github": "https://github.com/tbgracy/renaminator",
         "description": "A small python script for renaming files in bulk",
         "stack": [
             "Python",
@@ -101,7 +101,7 @@
     },    {
         "name": "Otrin",
         "image": "/project_img/otrin.jpg",
-        "github": "https://github.com/tbgracy/timetable",
+        "github": "https://github.com/spudster-team/otrin-backend",
         "description": "A CLI for generating random timetable based on some constraints",
         "stack": [
             "Python",
