@@ -24,14 +24,6 @@
         ]
     },
     {
-        "category": "Devops",
-        "items": [
-            "Docker (notion)",
-            "Kubernetes (notion)",
-            "Heroku/Render/Netlify/..."
-        ]
-    },
-    {
         "category": "Tools",
         "items": [
             "VSCode",

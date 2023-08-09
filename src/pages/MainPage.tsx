@@ -1,6 +1,6 @@
 import AboutSection from "../components/AboutSection";
 import ContactSection from "../components/ContactSection";
-import CustomPointer from "../components/CustomPointer";
+// import CustomPointer from "../components/CustomPointer";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import ProjectSection from "../components/ProjectSection";
@@ -16,7 +16,7 @@ export default function MainPage() {
                 <ProjectSection />
                 <ContactSection />
                 <Footer />
-                <CustomPointer />
+                {/* <CustomPointer /> */}
             </main>
         </>
     );

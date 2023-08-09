@@ -45,7 +45,7 @@
     {
         "name": "CashCam",
         "image": "/project_img/otrin.jpg",
-        "github": "ghttps://github.com/tbgracy/cashcam",
+        "github": "https://github.com/tbgracy/cashcam",
         "description": "A mobile app for facilitating ussd operations using CV",
         "stack": [
             "Flutter",

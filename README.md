@@ -6,7 +6,7 @@
 - [ ] Add resume link
 - [ ] Make it responsive
 - [ ] Add animations
-- [ ] Add language switch
+- [ ] Add language switch (use IA for translation)
 - [ ] Add theme switch
 - [ ] Add custom pointer
 - [ ] Add go up button
