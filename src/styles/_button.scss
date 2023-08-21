@@ -1,4 +1,5 @@
-button {
+button,
+.button {
     background-color: $accent-color;
     border: none;
     outline: none;
@@ -8,6 +9,7 @@ button {
     font-weight: bolder;
     font-family: 'Nunito';
     font-size: 1rem;
+    padding: .5rem 1rem;
     cursor: pointer;
     @include transition_();
 
