@@ -5,7 +5,13 @@ import aboutImg from "../assets/customIcons/about.png";
 import portrait from "../assets/portrait.png";
 import Button from "./Button";
 
+import personal_info from "../data/personal_info.json";
+
 export default function AboutSection() {
+    function handleResumeButtonClick() {
+        window.location.href = personal_info.resume_link;
+    }
+
     return (<section id="about">
         <SectionTitle icon={aboutImg} value={"About"} />
         <h2>Tsierenana Botramanagna Gracy</h2>
@@ -22,7 +28,7 @@ export default function AboutSection() {
                     I discovered programming in highschool through OpenClassroom's old PDFs (a course
                     about the C programming language).
                 </p>
-                <Button label={"My resume"} />
+                <Button label={"My resume"} onClick={handleResumeButtonClick} />
             </div>
             <img src={portrait} alt="" />
         </div>

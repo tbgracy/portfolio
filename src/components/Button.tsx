@@ -1,6 +1,11 @@
-export default function Button({ type, label }: { type?: "reset" | "submit", label: string }) {
-    // TOOD : Add onClick event
-    return <button type={type} >
+type ButtonProps = {
+    type?: "reset" | "submit",
+    label: string,
+    onClick?: () => void,
+}
+
+export default function Button({ type, label, onClick }: ButtonProps) {
+    return <button type={type} onClick={onClick}>
         {label}
     </button>
 }
