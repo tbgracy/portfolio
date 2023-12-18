@@ -27,6 +27,8 @@ export default function AboutSection() {
                     Nanodegree). I'm an avid reader and learner. Beside regular university courses,
                     I discovered programming in highschool through OpenClassroom's old PDFs (a course
                     about the C programming language).
+                    Asides from tech stuff, I'm an engaged visual artist. My experience in the artistic 
+                    field help me to become really keen about small details in design and all.
                 </p>
                 <Button label={"My resume"} onClick={handleResumeButtonClick} />
             </div>
