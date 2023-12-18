@@ -4,11 +4,7 @@ type Skill = {
 };
 
 export default function SkillSet({ data }: { data: Skill }) {
-    const skillItems: Array<JSX.Element> = [];
-
-    for (const skillItem of data.items) {
-        skillItems.push(<li className="skill-item">{skillItem}</li>);
-    }
+    const skillItems = data.items.map((skillItem, i) => <li key={i} className="skill-item">{skillItem}</li>)
 
     return (
         <article>
