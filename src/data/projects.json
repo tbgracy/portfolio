@@ -1,5 +1,25 @@
 [
     {
+        "name": "Bubus",
+        "image": "/project_img/artvsartist.png",
+        "github": "https://github.com/tbgracy/bubus",
+        "description": "A web app for searching bus for specific path",
+        "stack": [
+            "React",
+            "TypeScript"
+        ]
+    },
+    {
+        "name": "Art VS Artist",
+        "image": "/project_img/bubus.png",
+        "github": "https://github.com/tbgracy/art-vs-artist",
+        "description": "An #artvsartist generator (art vs artist is an annual art challenge)",
+        "stack": [
+            "React",
+            "TypeScript"
+        ]
+    },
+    {
         "name": "Github User Search",
         "image": "/project_img/ghs.png",
         "github": "https://github.com/twisty-team/tz_wcc2_s1",
@@ -98,7 +118,8 @@
             "CLI",
             "WCC 3nd edition"
         ]
-    },    {
+    },
+    {
         "name": "Otrin",
         "image": "/project_img/otrin.jpg",
         "github": "https://github.com/spudster-team/otrin-backend",

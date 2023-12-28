@@ -2,6 +2,8 @@
     {
         "category": "Programming Languages & Frameworks",
         "items": [
+            "React",
+            "TypeScript",
             "Python",
             "Flask",
             "Django",
