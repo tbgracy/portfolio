@@ -1,0 +1,15 @@
+.scroll-indicator {
+    height: 5px;
+    width: 0;
+    position: fixed;
+    top: 0;
+    background-color: $accent-color;
+    animation: widen;
+    animation-timeline: scroll();
+}
+
+@keyframes widen {
+    to {
+        width: 100%;
+    }
+}

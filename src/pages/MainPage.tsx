@@ -11,6 +11,7 @@ export default function MainPage() {
         <>
             <Navbar />
             <main>
+                <div className="scroll-indicator"></div>
                 <AboutSection />
                 <SkillSection />
                 <ProjectSection />
