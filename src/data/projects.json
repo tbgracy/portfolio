@@ -1,7 +1,7 @@
 [
     {
         "name": "Bubus",
-        "image": "/project_img/artvsartist.png",
+        "image": "/project_img/bubus.png",
         "github": "https://github.com/tbgracy/bubus",
         "description": "A web app for searching bus for specific path",
         "stack": [
@@ -11,12 +11,25 @@
     },
     {
         "name": "Art VS Artist",
-        "image": "/project_img/bubus.png",
+        "image": "/project_img/artvsartist.png",
         "github": "https://github.com/tbgracy/art-vs-artist",
         "description": "An #artvsartist generator (art vs artist is an annual art challenge)",
         "stack": [
             "React",
             "TypeScript"
+        ]
+    },
+    {
+        "name": "Nexus",
+        "image": "/project_img/nexus.png",
+        "github": "https://github.com/nexus-frontend",
+        "description": "An app for managing IT assets and tasks",
+        "stack": [
+            "React",
+            "TypeScript",
+            "Python",
+            "FastAPI",
+            "Websocket"
         ]
     },
     {
