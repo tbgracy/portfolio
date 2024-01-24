@@ -19,4 +19,11 @@ section#about {
             display: block;
         }
     }
+
+    @media (max-width:500px) {
+        .content {
+            flex-direction: column-reverse;
+            gap: 1rem;
+        }
+    }
 }
