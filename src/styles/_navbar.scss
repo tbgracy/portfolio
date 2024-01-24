@@ -23,4 +23,44 @@ nav {
             padding: .5rem;
         }
     }
+
+    @media (min-width: 501px) {
+        .shrinked-navbar {
+            display: none;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .expanded-navbar {
+            display: none;
+        }
+
+        .shrinked-navbar {
+            display: block;
+            cursor: pointer;
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: $accent-color;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    right: 0;
+                    gap: .2rem;
+                    padding: 1rem;
+                    margin: .1rem;
+
+                    background-color: $light-color;
+                    border: 1px solid $gray-color;
+                }
+            }
+
+            ul {
+                display: none;
+            }
+        }
+    }
 }
