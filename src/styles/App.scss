@@ -14,6 +14,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Nunito', 'Sans Serif';
 }
 
 :root {
@@ -30,6 +31,10 @@ h5 {
   font-weight: bold;
 }
 
+h3 {
+  color: $accent-color;
+}
+
 p {
   color: $dark-color;
 }
@@ -40,7 +45,6 @@ p {
 }
 
 body {
-  font-family: 'Nunito', 'Sans Serif';
   background-image:
     url("../assets/bg/1.png"),
     url("../assets/bg/2.png"),
