@@ -1,5 +1,5 @@
-export default function ExternalLinkItem({ url, icon }: { url: string, icon: JSX.Element }) {
+export default function ExternalLinkItem({ url, icon, title }: { url: string, icon: JSX.Element, title: string }) {
     return (
-        <a target="_blank" href={url}>{icon}</a>
+        <a target="_blank" title={title} href={url}>{icon}</a>
     );
 }
