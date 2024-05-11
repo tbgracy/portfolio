@@ -21,6 +21,12 @@ nav {
 
         a {
             padding: .5rem;
+            transition-property: font-size;
+
+            &:hover {
+                font-size: 1.1rem;
+                position: relative;
+            }
         }
     }
 
@@ -44,18 +50,20 @@ nav {
             &:active {
                 color: $accent-color;
 
-                ul {
-                    display: flex;
-                    flex-direction: column;
-                    position: absolute;
-                    right: 0;
-                    gap: .2rem;
-                    padding: 1rem;
-                    margin: .1rem;
+            }
 
-                    background-color: $light-color;
-                    border: 1px solid $gray-color;
-                }
+            ul.show {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                right: 0;
+                gap: .2rem;
+                padding: 1rem;
+                margin: .1rem;
+
+                background-color: $light-color;
+                border-radius: $border-radius;
+                border: 1px solid $gray-color;
             }
 
             ul {
