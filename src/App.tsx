@@ -1,10 +1,15 @@
 import './styles/App.scss'
-import MainPage from './pages/MainPage'
+import { Suspense, lazy } from 'react'
+import Preloader from './components/Preloader'
+
+const LazyMainPage = lazy(() => import('./pages/MainPage'))
 
 function App() {
   return (
     <>
-      <MainPage />
+      <Suspense fallback={ <Preloader /> }>
+        <LazyMainPage />
+      </Suspense>
     </>
   )
 }

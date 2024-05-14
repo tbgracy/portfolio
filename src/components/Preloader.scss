@@ -1,0 +1,12 @@
+#preloader-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    place-content: center;
+
+    img {
+        width: 5rem;
+        aspect-ratio: 1/1;
+    }
+}
