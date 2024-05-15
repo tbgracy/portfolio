@@ -1,3 +1,17 @@
+@keyframes jump {
+    from {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
 section#projects {
     .filter {
         margin-bottom: 2rem;
@@ -7,16 +21,19 @@ section#projects {
         width: 100%;
         text-align: center;
         box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: .5rem;
 
         .project__stack-item {
+            font-family: 'Nunito';
             cursor: pointer;
             display: inline-block;
             background-color: $gray-color;
             border-radius: 10px;
             padding: 0 1rem;
             font-size: smaller;
-            margin-left: .2rem;
-            margin-right: .2rem;
 
             &.selected {
                 color: $light-color;
@@ -88,16 +105,24 @@ section#projects {
                 font-size: larger;
             }
 
-            &:hover ul.links {
-                transform: scaleX(1);
-                width: auto;
-                position: relative;
-                @include transition_();
-            }
+            &:hover {
+                cursor: pointer;
 
-            &:hover img {
-                transform: scale(1.2);
-                @include transition_();
+                ul.links {
+                    transform: scaleX(1);
+                    width: auto;
+                    position: relative;
+                    @include transition_();
+                }
+
+                h3 {
+                    animation: jump $transition-duration ease-in-out;
+                }
+
+                img {
+                    transform: scale(1.2);
+                    @include transition_();
+                }
             }
 
             .project-img-container {

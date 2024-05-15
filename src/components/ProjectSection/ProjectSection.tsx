@@ -35,6 +35,7 @@ export default function ProjectSection() {
     return (
         <section id="projects">
             <SectionTitle icon={projectIcon} value="Stuff I made" />
+            <h3>All projects</h3>
             <Filter filterTags={filterTags} setFilterTags={setFilterTags} />
             <article id="project-container">
                 {projectElements}
