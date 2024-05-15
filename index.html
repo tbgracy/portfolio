@@ -17,9 +17,58 @@
   gtag('config', 'G-HMFW0SPVKZ');
 </script>
 
+<style>
+  @keyframes spinner {
+    from {
+      transform: rotate(0deg) scale(1);
+
+    }
+
+    50% {
+      transform: rotate(.5turn) scale(1.1);
+    }
+
+    100% {
+      transform: rotate(1turn) scale(1);
+    }
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+
+  #preloader-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    place-content: center;
+  }
+
+  #preloader {
+    width: 2rem;
+    aspect-ratio: 1/1;
+    border: .6rem solid #00abb3;
+    border-left-color: transparent;
+    border-radius: 50%;
+    animation: 1s infinite linear spinner;
+  }
+</style>
+
 <body>
-  <div id="root"></div>
+  <div id='preloader-container'>
+    <div id="preloader"></div>
+  </div>
+  <div id="root" class="hidden"></div>
   <script type="module" src="/src/main.tsx"></script>
 </body>
+<script>
+  const loader = document.querySelector('#preloader-container')
+  const root = document.querySelector('#root')
+  window.addEventListener('load', (e) => {
+    loader.classList.add('hidden')
+    root.classList.remove('hidden')
+  })
+</script>
 
 </html>
