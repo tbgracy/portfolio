@@ -33,16 +33,19 @@
     }
   }
 
-  .hidden {
+  #preloader-container.hidden {
     visibility: hidden;
   }
 
   #preloader-container {
-    width: 100vw;
-    height: 100vh;
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    position: fixed;
+    inset: 0;
     background-color: white;
     display: grid;
     place-content: center;
+    z-index: 999;
   }
 
   #preloader {
@@ -53,13 +56,28 @@
     border-radius: 50%;
     animation: 1s infinite linear spinner;
   }
+
+  #root.visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  #root {
+    opacity: 0;
+    transform: translate3d(0, -4rem, 0);
+    background-color: white;
+
+    transition-property: opacity, transform;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+  }
 </style>
 
 <body>
   <div id='preloader-container'>
     <div id="preloader"></div>
   </div>
-  <div id="root" class="hidden"></div>
+  <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
 </body>
 <script>
@@ -67,7 +85,7 @@
   const root = document.querySelector('#root')
   window.addEventListener('load', (e) => {
     loader.classList.add('hidden')
-    root.classList.remove('hidden')
+    root.classList.add('visible')
   })
 </script>
 
