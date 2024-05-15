@@ -1,17 +1,3 @@
-@keyframes spinningAnimation {
-    0% {
-        transform: rotate(0) scale(1);
-    }
-
-    50% {
-        transform: rotate(180deg) scale(1.2);
-    }
-
-    100% {
-        transform: rotate(360deg) scale(1);
-    }
-}
-
 .external-links {
     font-size: larger;
     margin: 1rem;
@@ -24,9 +10,17 @@
         border: 10px solid transparent;
         display: inline-block;
         transform-origin: center;
-
-        &:hover {
-            animation: spinningAnimation .5s ease-in;
+        cursor: default !important;
+        
+        svg{
+            transform: scale(1.5);
+            transition-property: transform, color;
+            transition-duration: $transition-duration;
+            &:hover {
+                color: $accent-color;
+                cursor: pointer;
+                transform: scale(1.7);
+            }
         }
     }
 }

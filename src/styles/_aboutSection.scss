@@ -3,9 +3,11 @@ section#about {
         display: flex;
         align-items: center;
         border-left: 2px dashed $accent-color;
+        gap: 2rem;
 
         p {
             flex-grow: 2;
+            text-align: justify;
             padding-left: 1rem;
         }
 
