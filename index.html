@@ -20,16 +20,16 @@
 <style>
   @keyframes spinner {
     from {
-      transform: rotate(0deg) scale(1);
+      transform: rotate(0deg);
 
     }
 
     50% {
-      transform: rotate(.5turn) scale(1.1);
+      transform: rotate(.5turn);
     }
 
     100% {
-      transform: rotate(1turn) scale(1);
+      transform: rotate(1turn);
     }
   }
 
@@ -48,12 +48,28 @@
     z-index: 999;
   }
 
-  #preloader {
+  .preloader {
     width: 2rem;
     aspect-ratio: 1/1;
     border: .6rem solid #00abb3;
-    border-left-color: transparent;
     border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+
+  .preloader:nth-last-of-type(1) {
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    animation: 2s infinite linear spinner;
+  }
+  
+  .preloader:nth-last-of-type(2) {
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
     animation: 1s infinite linear spinner;
   }
 
@@ -75,7 +91,8 @@
 
 <body>
   <div id='preloader-container'>
-    <div id="preloader"></div>
+    <div class="preloader"></div>
+    <div class="preloader"></div>
   </div>
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
