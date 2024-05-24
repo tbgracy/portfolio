@@ -1,0 +1,33 @@
+@import "../../styles/variables";
+
+.language-switch {
+    &:not(ul){
+        cursor: pointer;
+    }
+
+    &:hover {
+        color: $accent-color;
+    }
+
+    & ul {
+        display: none;
+        color: $dark-color;
+    }
+
+    &:hover ul {
+        display: flex;
+        flex-direction: column;
+        background-color: $light-color;
+        padding: 1rem;
+        gap: 1rem;
+        border: 2px solid $gray-color;
+        position: absolute;
+        right: .5rem;
+        width: 5rem;
+
+        li:hover {
+            color: $accent-color;
+            font-weight: bold;
+        }
+    }
+}
