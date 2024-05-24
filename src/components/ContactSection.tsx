@@ -2,13 +2,15 @@ import SectionTitle from "./SectionTitle";
 
 import contactIcon from "../assets/customIcons/contact.png";
 import ExternalLink from "./ExternalLinks";
+import { useTranslation } from "react-i18next";
 
 export default function ContactSection() {
+    const { t } = useTranslation();
+
     return <section id="contact">
-        <SectionTitle icon={contactIcon} value="Wanna talk ? " />
+        <SectionTitle icon={contactIcon} value={t('wanna-talk')} />
         <p>
-            Leave a message below or send me direct message to one of the digital
-            profiles linked here.
+            {t('contact-cta')}
         </p>
         <ExternalLink />
         {/* <form action="#" method="POST">

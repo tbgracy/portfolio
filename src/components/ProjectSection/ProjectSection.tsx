@@ -6,9 +6,11 @@ import projectIcon from "../../assets/customIcons/projects.png";
 import ProjectCard from "./ProjectCard";
 import { useState } from "react";
 import Filter from "./components/Filter";
+import { useTranslation } from "react-i18next";
 
 export default function ProjectSection() {
     const [filterTags, setFilterTags] = useState<string[]>([]);
+    const { t } = useTranslation();
 
     let projectElements: JSX.Element[];
 
@@ -34,8 +36,8 @@ export default function ProjectSection() {
 
     return (
         <section id="projects">
-            <SectionTitle icon={projectIcon} value="Stuff I made" />
-            <h3>All projects</h3>
+            <SectionTitle icon={projectIcon} value={t('stuff-i-made')} />
+            <h3>{t("all-projects")}</h3>
             <Filter filterTags={filterTags} setFilterTags={setFilterTags} />
             <article id="project-container">
                 {projectElements}

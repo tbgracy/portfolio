@@ -4,9 +4,11 @@ import Logo from "../Navbar/Logo";
 import Navlink from "../Navbar/Navlink";
 import { useRef } from "react";
 import LanguageSwitch from "./LanguageSwitch";
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
     const navRef = useRef<HTMLUListElement>(null);
+    const { t } = useTranslation();
 
     function handleClick() {
         if (navRef.current!.classList.contains('show')) {
@@ -20,19 +22,19 @@ export default function Navbar() {
         <nav>
             <Logo />
             <ul className="expanded-navbar">
-                <Navlink label={"About"} target={"#about"} />
-                <Navlink label={"Skills"} target={"#skills"} />
-                <Navlink label={"Projects"} target={"#projects"} />
-                <Navlink label={"Contact"} target={"#contact"} />
+                <Navlink label={t("about")} target={"#about"} />
+                <Navlink label={t("skills")} target={"#skills"} />
+                <Navlink label={t("projects")} target={"#projects"} />
+                <Navlink label={t("contact")} target={"#contact"} />
             </ul>
             <LanguageSwitch />
 
             <div className="shrinked-navbar" onClick={handleClick}><Menu />
                 <ul ref={navRef} className="hamburger-navbar">
-                    <Navlink label={"About"} target={"#about"} />
-                    <Navlink label={"Skills"} target={"#skills"} />
-                    <Navlink label={"Projects"} target={"#projects"} />
-                    <Navlink label={"Contact"} target={"#contact"} />
+                    <Navlink label={t("about")} target={"#about"} />
+                    <Navlink label={t("contact")} target={"#skills"} />
+                    <Navlink label={t("projects")} target={"#projects"} />
+                    <Navlink label={t("contact")} target={"#contact"} />
                 </ul>
             </div>
         </nav>

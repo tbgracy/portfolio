@@ -1,6 +1,6 @@
 [
     {
-        "category": "Programming Languages & Frameworks",
+        "category": "programming-languages-frameworks",
         "items": [
             "React",
             "TypeScript",
@@ -17,7 +17,7 @@
         ]
     },
     {
-        "category": "Databases",
+        "category": "databases",
         "items": [
             "MySQL",
             "Firestore",
@@ -26,7 +26,7 @@
         ]
     },
     {
-        "category": "Tools",
+        "category": "tools",
         "items": [
             "VSCode",
             "Linux",
