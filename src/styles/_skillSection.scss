@@ -1,7 +1,10 @@
+@import "animationMixins";
+
 #skill-container {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    @include fadeInOnScroll;
 
     article {
         margin: 1rem;

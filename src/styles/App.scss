@@ -2,8 +2,8 @@
 @import "atropos/scss";
 
 @font-face {
-  font-family: "Aloevera";
-  src: url("../assets/fonts/Aloevera-Regular.otf");
+  font-family: "Tbgracy";
+  src: url("../assets/fonts/Tbgracy-Regular.ttf");
 }
 
 @font-face {
@@ -27,8 +27,8 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Aloevera", sans-serif;
-  font-weight: bold;
+  font-family: "Tbgracy", sans-serif;
+  text-transform: uppercase;
 }
 
 h3 {
