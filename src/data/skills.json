@@ -5,21 +5,14 @@
             "React",
             "TypeScript",
             "Python",
-            "Flask",
-            "FastAPI",
-            "Django",
             "Dart",
             "Flutter",
-            "Java",
-            "HTML/CSS/JS",
-            "REST API",
-            "GraphQL API"
+            "HTML/CSS"
         ]
     },
     {
         "category": "databases",
         "items": [
-            "MySQL",
             "Firestore",
             "PostgreSQL",
             "SQLite"
@@ -35,7 +28,6 @@
             "Github",
             "Postman",
             "IntelliJ",
-            "Eclipse",
             "Chrome DevTools"
         ]
     }

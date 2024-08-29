@@ -1,19 +1,20 @@
+import { useTranslation } from "react-i18next";
+
 import ExternalLink from "./ExternalLinks";
 import SectionTitle from "./SectionTitle";
+import Button from "./Button";
 
 import aboutImg from "../assets/customIcons/about.png";
 import portrait from "../assets/portrait.png";
-import Button from "./Button";
 
 import personal_info from "../data/personal_info.json";
-import { useTranslation } from "react-i18next";
 
 export default function AboutSection() {
     function handleResumeButtonClick() {
-        window.location.href = personal_info.resume_link; 
+        window.location.href = personal_info.resume_link;
     }
 
-    const {t} = useTranslation();
+    const { t } = useTranslation();
 
     return (<section id="about">
         <SectionTitle icon={aboutImg} value={t("about")} />

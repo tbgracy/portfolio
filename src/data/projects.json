@@ -3,144 +3,133 @@
         "name": "Bubus",
         "image": "/project_img/bubus.png",
         "github": "https://github.com/tbgracy/bubus",
-        "description": "A web app for searching bus for specific path",
+        "description": {
+            "fr": "Une application web pour rechercher des bus pour un trajet spécifique",
+            "en": "A web app for searching bus for specific path"
+        },
+        "featured": true,
         "stack": [
             "React",
-            "TypeScript"
+            "TypeScript",
+            "Finite state machines"
         ]
     },
     {
         "name": "Art VS Artist",
         "image": "/project_img/artvsartist.png",
         "github": "https://github.com/tbgracy/art-vs-artist",
-        "description": "An #artvsartist generator (art vs artist is an annual art challenge)",
+        "description": {
+            "fr": "Un générateur de collages #artvsartist",
+            "en": "An #artvsartist generator (art vs artist is an annual art challenge)"
+        },
+        "featured": true,
         "stack": [
             "React",
-            "TypeScript"
+            "TypeScript",
+            "Canvas"
         ]
     },
     {
         "name": "Nexus",
         "image": "/project_img/nexus.png",
         "github": "https://github.com/nexus-frontend",
-        "description": "An app for managing IT assets and tasks",
+        "description": {
+            "fr": "Une application pour gérer le matériel et les tiquets informatiques",
+            "en": "An app for managing IT assets and tasks"
+        },
+        "private": true,
+        "stack": [
+            "React",
+            "Python",
+            "TypeScript",
+            "Figma",
+            "Websocket",
+            "Internship"
+        ]
+    },
+    {
+        "name": "Ultimate Frontend Challenge",
+        "image": "/project_img/ufc.png",
+        "github": "https://github.com/tbgracy/ufc",
+        "description": {
+            "fr": "Un site web hébergeant des défis frontend hebdomadaires pour améliorer les compétences en intégration",
+            "en": "A weekly frontend challenge host website to improve UI integration skills"
+        },
         "stack": [
             "React",
             "TypeScript",
-            "Python",
-            "FastAPI",
-            "Websocket"
-        ]
-    },
-    {
-        "name": "Github User Search",
-        "image": "/project_img/ghs.png",
-        "github": "https://github.com/twisty-team/tz_wcc2_s1",
-        "description": "A web app for searching github users by name",
-        "stack": [
-            "Flask",
-            "Python",
-            "REST API",
-            "WCC 2nd edition"
-        ]
-    },
-    {
-        "name": "Fintina",
-        "image": "/project_img/kalyhub-mobile.jpg",
-        "github": "https://github.com/spudster-team/fintina-mobile",
-        "description": "An app that extract keywords from a text",
-        "stack": [
-            "Flutter",
-            "Dart",
-            "NLP"
+            "Redux",
+            "Firebase"
         ]
     },
     {
         "name": "Spotato",
         "image": "/project_img/spotato.png",
         "github": "https://github.com/spudster-team/spotato-mobile",
-        "description": "A queue app",
-        "stack": [
-            "Flutter",
-            "Dart"
-        ]
-    },
-    {
-        "name": "Onirix",
-        "image": "/project_img/otrin.jpg",
-        "github": "https://github.com/spudster-team/onirix",
-        "description": "Webcup 2023 project",
-        "stack": [
-            "Flutter",
-            "Dart"
-        ]
-    },
-    {
-        "name": "CashCam",
-        "image": "/project_img/otrin.jpg",
-        "github": "https://github.com/tbgracy/cashcam",
-        "description": "A mobile app for facilitating ussd operations using CV",
+        "description": {
+            "fr": "Une application de réservation de file d'attente",
+            "en": "A queue booking app"
+        },
         "stack": [
             "Flutter",
             "Dart",
-            "Computer Vision"
-        ]
-    },
-    {
-        "name": "Renaminator",
-        "image": "/project_img/otrin.jpg",
-        "github": "https://github.com/tbgracy/renaminator",
-        "description": "A small python script for renaming files in bulk",
-        "stack": [
-            "Python",
-            "PyPI",
-            "CLI"
-        ]
-    },
-    {
-        "name": "Kalyhub",
-        "image": "/project_img/kalyhub.png",
-        "github": "#",
-        "description": "A restaurant meal ordering platform",
-        "stack": [
-            "Flutter",
-            "Dart",
-            "DRF",
-            "Django",
-            "MVola API"
+            "Open Street Map"
         ]
     },
     {
         "name": "Ankamantatra",
         "image": "/project_img/ankamantatra.png",
         "github": "https://github.com/twisty-team/ankamantatra",
-        "description": "A CLI app used for trivial quizzes",
+        "description": {
+            "fr": "Une application CLI pour faire des quizz",
+            "en": "A CLI app used for trivial quizzes"
+        },
         "stack": [
             "Python",
             "CLI",
-            "WCC 2nd edition"
+            "Hackathon"
         ]
     },
     {
         "name": "Timetable Generator",
         "image": "/project_img/timetable.png",
         "github": "https://github.com/tbgracy/timetable",
-        "description": "A CLI for generating random timetable based on some constraints",
+        "description": {
+            "fr": "Un CLI pour générer des emplois du temps aléatoires basés sur certaines contraintes",
+            "en": "A CLI for generating random timetable based on some constraints"
+        },
         "stack": [
             "Python",
             "CLI",
-            "WCC 3nd edition"
+            "Hackathon"
         ]
     },
     {
         "name": "Otrin",
         "image": "/project_img/otrin.jpg",
         "github": "https://github.com/spudster-team/otrin-backend",
-        "description": "A CLI for generating random timetable based on some constraints",
+        "description": {
+            "fr": "Site web de comparaison de prix",
+            "en": "Price comparison website"
+        },
         "stack": [
             "Python",
-            "CLI",
-            "WCC 3nd edition"
+            "Django Rest Framework",
+            "Backend",
+            "Hackathon"
+        ]
+    },
+    {
+        "name": "Cashcam",
+        "github": "https://github.com/tbgracy/cashcam",
+        "description": {
+            "fr": "Une application mobile pour faciliter les opérations UUSD",
+            "en": "A mobile app for easier UUSD operations"
+        },
+        "stack": [
+            "Flutter",
+            "Dart",
+            "School project"
         ]
     }
 ]

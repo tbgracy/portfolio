@@ -1,36 +1,37 @@
 @import "animationMixins";
 
 #skill-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    @include fadeInOnScroll;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  @include fadeInOnScroll;
 
-    article {
-        margin: 1rem;
+  article {
+    margin: 1rem;
 
-        h3 {
-            color: $accent-color;
-            margin-bottom: 1rem;
-        }
-
-        .skill-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-
-            .skill-item {
-                background-color: $gray-color;
-                margin: .2em;
-                border-radius: 5px;
-                padding: .2em .5rem;
-                display: inline-block;
-                cursor: default;
-            }
-        }
+    h3 {
+      color: $accent-color;
+      margin-bottom: 1rem;
     }
 
-    @media (max-width:500px) {
-        flex-wrap: wrap;
+    .skill-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      .skill-item {
+        background-color: $gray-color;
+        margin: 0.2em;
+        user-select: none;
+        border-radius: 5px;
+        padding: 0.2em 0.5rem;
+        display: inline-block;
+        cursor: default;
+      }
     }
+  }
+
+  @media (max-width: 500px) {
+    flex-wrap: wrap;
+  }
 }
