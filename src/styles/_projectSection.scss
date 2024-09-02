@@ -1,153 +1,174 @@
 @import "animationMixins";
 
 @keyframes jump {
-    from {
-        transform: scale(1);
-    }
+  from {
+    transform: scale(1);
+  }
 
-    50% {
-        transform: scale(1.2);
-    }
+  50% {
+    transform: scale(1.2);
+  }
 
-    to {
-        transform: scale(1);
-    }
+  to {
+    transform: scale(1);
+  }
 }
 
 section#projects {
-    .filter {
-        margin-bottom: 2rem;
-    }
+  .filter {
+    margin-bottom: 2rem;
+  }
 
-    ul.stack {
-        width: 100%;
+  ul.stack {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+
+    .project__stack-item:not(.project-card .project__stack-item) {
+      font-family: "Nunito";
+      cursor: pointer;
+      user-select: none;
+      display: inline-block;
+      background-color: $gray-color;
+      border-radius: 10px;
+      padding: 0 1rem;
+      font-size: smaller;
+
+      &.selected {
+        color: $light-color;
+        background-color: $accent-color;
+      }
+    }
+  }
+
+  #project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80vw;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+
+    .project-card {
+      box-shadow: 0 0 10px $gray-color;
+      background-color: $light-color;
+      width: 250px;
+      height: fit-content;
+      position: relative;
+      border-radius: $border-radius;
+      margin: 1rem;
+      transition: all $transition-duration;
+      @include fadeInOnScroll;
+
+      .project__stack-item {
+        font-family: "Nunito";
+        cursor: pointer;
+        user-select: none;
+        display: inline-block;
+        color: $accent-color;
+        font-weight: bold;
+        font-size: smaller;
+        font-family: "Tbgracy";
+        text-transform: uppercase;
+        font-size: .9rem;
+
+        &::before {
+          content: "#";
+          font-weight: bold;
+        }
+      }
+
+      // project-title
+      h3 {
         text-align: center;
+        padding: 0.5rem 1rem 0.3rem 1rem;
+        width: fit-content;
+        font-size: smaller;
+        z-index: 100;
+        border-radius: 5px;
+        background: linear-gradient(
+          to bottom right,
+          $accent-color,
+          rgb(66, 172, 172)
+        );
+        color: white;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        max-width: 70%;
+        box-shadow: 0 0 10px $accent-color;
+      }
+
+      p {
+        text-align: center;
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
+
+      div.footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
         box-sizing: border-box;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: .5rem;
+      }
 
-        .project__stack-item {
-            font-family: 'Nunito';
-            cursor: pointer;
-            user-select: none;
-            display: inline-block;
-            background-color: $gray-color;
-            border-radius: 10px;
-            padding: 0 1rem;
-            font-size: smaller;
-
-            &.selected {
-                color: $light-color;
-                background-color: $accent-color;
-            }
-        }
-    }
-
-    #project-container {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 80vw;
-        left: 50%;
-        transform: translateX(-50%);
+      // project links
+      ul.links {
+        transform: scaleX(0);
         position: relative;
+        width: 0;
+        list-style: none;
+        text-align: right;
+        display: block;
+        font-size: larger;
 
-
-        .project-card {
-            box-shadow: 0 0 10px $gray-color;
-            background-color: $light-color;
-            width: 250px;
-            height: fit-content;
-            position: relative;
-            border-radius: $border-radius;
-            margin: 1rem;
-            transition: all $transition-duration;
-            @include fadeInOnScroll;
-
-            // project-title
-            h3 {
-                text-align: center;
-                padding: .5rem 1rem .3rem 1rem;
-                width: fit-content;
-                font-size: smaller;
-                z-index: 100;
-                border-radius: 5px;
-                background: linear-gradient(to bottom right, $accent-color, rgb(66, 172, 172));
-                color: white;
-                position: absolute;
-                top: 1rem;
-                left: 1rem;
-                max-width: 70%;
-                box-shadow: 0 0 10px $accent-color;
-            }
-
-            p {
-                text-align: center;
-                margin-top: 1rem;
-                margin-left: .5rem;
-                margin-right: .5rem;
-            }
-
-            div.footer {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 1rem;
-                box-sizing: border-box;
-            }
-
-            // project links
-            ul.links {
-                transform: scaleX(0);
-                position: relative;
-                width: 0;
-                list-style: none;
-                text-align: right;
-                display: block;
-                font-size: larger;
-
-                .private {
-                    cursor: not-allowed;
-                }
-            }
-
-            &:hover {
-                cursor: pointer;
-
-                ul.links {
-                    transform: scaleX(1);
-                    width: auto;
-                    position: relative;
-                    @include transition_();
-                }
-
-                h3 {
-                    animation: jump $transition-duration ease-in-out;
-                }
-
-                img {
-                    transform: scale(1.2);
-                    @include transition_();
-                }
-            }
-
-            .project-img-container {
-                height: 250px;
-                width: 100%;
-                border-radius: $border-radius;
-                background-color: $gray-color;
-                overflow: hidden;
-
-                img {
-                    object-fit: cover;
-                    box-sizing: border-box;
-                    height: 100%;
-                    width: 100%;
-                    transition: all $transition-duration;
-                }
-            }
+        .private {
+          cursor: not-allowed;
         }
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        ul.links {
+          transform: scaleX(1);
+          width: auto;
+          position: relative;
+          @include transition_();
+        }
+
+        h3 {
+          animation: jump $transition-duration ease-in-out;
+        }
+
+        img {
+          transform: scale(1.2);
+          @include transition_();
+        }
+      }
+
+      .project-img-container {
+        height: 250px;
+        width: 100%;
+        border-radius: $border-radius;
+        background-color: $gray-color;
+        overflow: hidden;
+
+        img {
+          object-fit: cover;
+          box-sizing: border-box;
+          height: 100%;
+          width: 100%;
+          transition: all $transition-duration;
+        }
+      }
     }
+  }
 }
