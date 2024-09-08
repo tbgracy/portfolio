@@ -48,6 +48,21 @@
         ]
     },
     {
+        "name": "Repo Master",
+        "image": "/project_img/repo_master.png",
+        "github": "https://github.com/tbgracy/repo-master",
+        "description": {
+            "fr": "Archiver ou changer la visibilité d'un dépôt Github en un clic",
+            "en": "Archive a repository or toggle its visibility in one click"
+        },
+        "stack": [
+            "React",
+            "TypeScript",
+            "React Query",
+            "Supabase"
+        ]
+    },
+    {
         "name": "Ultimate Frontend Challenge",
         "image": "/project_img/ufc.png",
         "github": "https://github.com/tbgracy/ufc",
