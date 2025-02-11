@@ -25,9 +25,7 @@ const resources = {
       "signature@tbgracy": "Made with 👐 by @tbgracy",
       "private-repo": "This repository is not public",
       "about-me": `
-                I'm Gracy, a frontend developer from Madagascar, 
-                currently enrolled in a Software Engineering program at ASJA.
-                I mainly code in Python and Typescript. 
+                I'm Gracy, a frontend developer from Madagascar who mainly code in Python and Typescript. 
                 And asides from tech stuff, I'm an enthusiast visual artist (urban sketcher/comic book artist/illustrator).`,
     },
   },
@@ -51,9 +49,7 @@ const resources = {
       "signature@tbgracy": "Fait avec des 👐 par @tbgracy",
       "private-repo": "Ce dépôt n'est",
       "about-me": `
-                Je m'appelle Gracy, développeur frontend basé à Madagascar, 
-                actuellement étudiant en Génie Logiciel à l'ASJA. 
-                J'utilise principalement Python et Typescript pour coder.
+                Je m'appelle Gracy, développeur frontend basé à Madagascar et j'utilise principalement Python et Typescript pour coder.
                 En dehors du domaine technologique, je suis passioné par le dessin (urban sketching/bande dessinée/illustration).`,
     },
   },
